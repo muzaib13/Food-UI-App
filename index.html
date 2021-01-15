@@ -1,23 +1,26 @@
 <!Doctype html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"> <!--This tag will tell the mobile phones not to zoom outthe page and start from scale 1-->
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" tyle="text/css" href="vendors/css/normalize.css"/>
         <link rel="stylesheet" type="text/css" href="Resources/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="Resources/css/queries.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
         <title>Omni Food</title>
     </head>
 
     <body>
         <header>
-            <nav>
+            <nav class="sticky">
                 <div class="row">
                     <img src="Resources/css/img/logo.png" alt="Omni Food" class="logo"/>
+                    <img src="Resources/css/img/logo.png" alt="Omni Food" class="logo-black"/>
                     <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our Cities</a></li>
-                        <li><a href="#">Sign Up</a></li>
+                        <li><a href="#features">Food delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our Cities</a></li>
+                        <li><a href="#plans">Sign Up</a></li>
                     </ul>
                 </div>
             </nav>
@@ -28,7 +31,7 @@
             </div>
         </header>
 
-        <section class="section-feature">
+        <section class="section-feature" id="features">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">
@@ -101,7 +104,7 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
@@ -128,7 +131,7 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
@@ -213,7 +216,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-plans">
+        <section class="section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
