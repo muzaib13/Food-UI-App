@@ -11,6 +11,7 @@ html {
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 .clearfix {
@@ -134,7 +135,8 @@ a:active {
 /* BUTTON STYLES */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -144,7 +146,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
@@ -420,4 +423,74 @@ cite img {
 
 .plan-box ul li {
   padding: 5px 0;
+}
+
+/* --------------------------- */
+/* CONTACT FORM */
+/* --------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid#ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* -------------- */
+/* FOOTER */
+/* --------------- */
+
+footer {
+  background-color: #333;
+  padding: 50px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.5s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
 }
